@@ -1,5 +1,9 @@
-Sonar Custom Rules Examples [![Build Status](https://travis-ci.org/SonarSource/sonar-custom-rules-examples.svg?branch=master)](https://travis-ci.org/SonarSource/sonar-custom-rules-examples)
+AssertEquals parameter order rule
 ==========
+See the rule in [java-custom-rules project](java-custom-rules)
+
+### Sonar Custom Rules Examples [![Build Status](https://travis-ci.org/SonarSource/sonar-custom-rules-examples.svg?branch=master)](https://travis-ci.org/SonarSource/sonar-custom-rules-examples)
+
 
 This repository contains project examples you can directly clone to bootstrap your own project to write custom rules for COBOL, Java, JavaScript, PHP, and RPG.
 

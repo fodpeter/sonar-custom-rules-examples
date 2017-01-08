@@ -22,6 +22,7 @@ package org.sonar.samples.java;
 import java.util.List;
 
 import org.sonar.plugins.java.api.JavaCheck;
+import org.sonar.samples.java.checks.AssertEqualsParameterOrderCheck;
 import org.sonar.samples.java.checks.AvoidAnnotationRule;
 import org.sonar.samples.java.checks.AvoidBrandInMethodNamesRule;
 import org.sonar.samples.java.checks.AvoidMethodDeclarationRule;
@@ -57,6 +58,7 @@ public final class RulesList {
 
   public static List<Class<? extends JavaCheck>> getJavaTestChecks() {
     return ImmutableList.<Class<? extends JavaCheck>>builder()
+      .add(AssertEqualsParameterOrderCheck.class)
       .build();
   }
 }

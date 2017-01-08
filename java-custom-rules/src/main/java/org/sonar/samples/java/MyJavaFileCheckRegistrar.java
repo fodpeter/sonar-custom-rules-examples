@@ -23,6 +23,7 @@ import java.util.Arrays;
 
 import org.sonar.plugins.java.api.CheckRegistrar;
 import org.sonar.plugins.java.api.JavaCheck;
+import org.sonar.samples.java.checks.AssertEqualsParameterOrderCheck;
 import org.sonar.samples.java.checks.AvoidAnnotationRule;
 import org.sonar.samples.java.checks.AvoidBrandInMethodNamesRule;
 import org.sonar.samples.java.checks.AvoidMethodDeclarationRule;
@@ -56,6 +57,7 @@ public class MyJavaFileCheckRegistrar implements CheckRegistrar {
    */
   public static Class<? extends JavaCheck>[] checkClasses() {
     return new Class[] {
+      AssertEqualsParameterOrderCheck.class,
       SpringControllerRequestMappingEntityRule.class,
       AvoidAnnotationRule.class,
       AvoidBrandInMethodNamesRule.class,

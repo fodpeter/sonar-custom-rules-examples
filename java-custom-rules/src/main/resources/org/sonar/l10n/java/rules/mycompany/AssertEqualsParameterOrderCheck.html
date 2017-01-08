@@ -1,0 +1,19 @@
+<p>This rule detects the incorrect usage of Assert.assertEquals. The first parameter of this method is the expected
+    value and the second parameter is the calculated value. </p>
+<h2>Noncompliant Code Example</h2>
+<pre>
+    @Test
+    public void test() {
+        Assert.assertEquals(ObjectJoiner.joinString("str", "ing"), "string"); // Noncompliant
+        Assert.assertEquals(Math.abs(-1), 1); // Noncompliant
+    }
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+    @Test
+    public void test() {
+        Assert.assertEquals("", "");
+        Assert.assertEquals("string", ObjectJoiner.joinString("str", "ing"));
+        Assert.assertEquals(1, Math.abs(-1));
+    }
+</pre>

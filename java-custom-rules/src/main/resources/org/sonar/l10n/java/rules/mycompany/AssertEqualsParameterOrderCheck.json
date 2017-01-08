@@ -1,0 +1,13 @@
+{
+  "title": "Assert equals parameter order check",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "5min"
+  },
+  "tags": [
+    "bad-practice",
+    "confusing"
+  ],
+  "defaultSeverity": "Minor"
+}

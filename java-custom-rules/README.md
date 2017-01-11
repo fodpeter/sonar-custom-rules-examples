@@ -17,6 +17,8 @@ junit-4.12-sources.jar!/org/junit/Assert.java:134
         assertEquals(null, expected, actual);
     }
 ```
+## Reference:
+ Sonar Jira task: [RSPEC-3415](https://jira.sonarsource.com/browse/RSPEC-3415)
 
 ## Usage:
 * Build and install
